@@ -46,15 +46,15 @@ class ArabicWordApp:
             ("Word Type", "word_type", "dropdown"),
             ("English Meaning", "english_meaning", "str"),
             ("Urdu Meaning", "urdu_meaning", "str"),
-            ("Personal Connotation", "personal_connotation", "str"),
+            ("Personal Connotation ( , separated)", "personal_connotation", "str"),
             ("Color", "color", "str"),
             ("Shape", "shape", "str"),
-            ("Heaviness (1-5)", "heaviness", "int"),
+            ("Heaviness (0-5)", "heaviness", "int"),
             ("Sharpness (0-5)", "sharpness", "int"),
-            ("Purity (1-5)", "purity", "int"),
-            ("Divinity (1-5)", "divinity", "int"),
+            ("Purity (0-5)", "purity", "int"),
+            ("Divinity (0-5)", "divinity", "int"),
             ("Earthiness (0-5)", "earthiness", "int"),
-            ("Emotion", "emotion", "str")
+            ("Emotion ( , separated)", "emotion", "str")
         ]
         
         self.entries = {}
@@ -84,7 +84,7 @@ class ArabicWordApp:
         frame = ttk.LabelFrame(self.root, text="Existing Words")
         frame.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
         
-        columns = ("id", "arabic_word","word_type", "english_meaning", "color", "shape")
+        columns = ("id", "arabic_word","word_type", "english_meaning", "urdu_meaning", "personal_connotation")
         self.tree = ttk.Treeview(frame, columns=columns, show="headings")
         
         for col in columns:
@@ -95,14 +95,31 @@ class ArabicWordApp:
         self.refresh_list()
 
     def add_word(self):
+        # Get required fields, arabic_word and english_meaning, conditionally
+        arabic_word = self.entries["arabic_word"].get().strip()
+        english_meaning = self.entries["english_meaning"].get().strip()
+        
+        # Validate required fields
+        if not arabic_word:
+            self.status.config(text="Error: Arabic Word is required")
+            return
+        if not english_meaning:
+            self.status.config(text="Error: English Meaning is required")
+            return
         try:
+            # Helper function to split comma-separated strings into arrays
+            def split_to_array(input_str):
+                if not input_str.strip():
+                    return []
+                return [item.strip() for item in input_str.split(",") if item.strip()]
+        
             new_word = {
                 "id": len(self.data) + 1,  # Auto-incrementing ID
                 "arabic_word": self.entries["arabic_word"].get(),
                 "english_meaning": self.entries["english_meaning"].get(),
                 "word_type": self.entries["word_type"].get(),  # Add word type
                 "urdu_meaning": self.entries["urdu_meaning"].get(),
-                "personal_connotation": self.entries["personal_connotation"].get(),
+                "personal_connotation": split_to_array(self.entries["personal_connotation"].get()),
                 "color": self.entries["color"].get(),
                 "shape": self.entries["shape"].get(),
                 "heaviness": int(self.entries["heaviness"].get()),
@@ -110,7 +127,7 @@ class ArabicWordApp:
                 "purity": int(self.entries["purity"].get()),
                 "divinity": int(self.entries["divinity"].get()),
                 "earthiness": int(self.entries["earthiness"].get()),
-                "emotion": self.entries["emotion"].get()
+                "emotion": split_to_array(self.entries["emotion"].get())
             }
             
             self.data.append(new_word)
@@ -131,13 +148,16 @@ class ArabicWordApp:
     def refresh_list(self):
         self.tree.delete(*self.tree.get_children())
         for word in self.data:
-            self.tree.insert("", tk.END, values=(
+        # Convert arrays to comma-separated strings for display
+            personal_connotation = ", ".join(word["personal_connotation"]) if isinstance(word["personal_connotation"], list) else word["personal_connotation"]            
+
+        self.tree.insert("", tk.END, values=(
             word["id"],
             word["arabic_word"],
             word["word_type"],
             word["english_meaning"],
-            word.get("color", ""),
-            word.get("shape", "")
+            word["urdu_meaning"],
+            personal_connotation
         ))
 
 if __name__ == "__main__":

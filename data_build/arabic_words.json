@@ -14,5 +14,98 @@
     "divinity": 4,
     "earthiness": 0,
     "emotion": "serene"
+  },
+  {
+    "id": 2,
+    "arabic_word": "إِجْمَاعْ",
+    "english_meaning": "consensus",
+    "word_type": "noun",
+    "urdu_meaning": "",
+    "personal_connotation": [
+      "hand shake"
+    ],
+    "color": "dark green",
+    "shape": "",
+    "heaviness": 3,
+    "sharpness": 2,
+    "purity": 3,
+    "divinity": 2,
+    "earthiness": 5,
+    "emotion": [
+      "nod"
+    ]
+  },
+  {
+    "id": 3,
+    "arabic_word": "",
+    "english_meaning": "",
+    "word_type": "",
+    "urdu_meaning": "",
+    "personal_connotation": [],
+    "color": "",
+    "shape": "",
+    "heaviness": 0,
+    "sharpness": 0,
+    "purity": 0,
+    "divinity": 0,
+    "earthiness": 0,
+    "emotion": []
+  },
+  {
+    "id": 4,
+    "arabic_word": "",
+    "english_meaning": "",
+    "word_type": "",
+    "urdu_meaning": "",
+    "personal_connotation": [],
+    "color": "",
+    "shape": "",
+    "heaviness": 0,
+    "sharpness": 0,
+    "purity": 0,
+    "divinity": 0,
+    "earthiness": 0,
+    "emotion": []
+  },
+  {
+    "id": 5,
+    "arabic_word": "إِمَامْ\n",
+    "english_meaning": "leader",
+    "word_type": "noun",
+    "urdu_meaning": "رہنما",
+    "personal_connotation": [
+      "ahead",
+      "knowledgable"
+    ],
+    "color": "",
+    "shape": "standing",
+    "heaviness": 4,
+    "sharpness": 2,
+    "purity": 3,
+    "divinity": 1,
+    "earthiness": 5,
+    "emotion": [
+      "acceptance"
+    ]
+  },
+  {
+    "id": 6,
+    "arabic_word": "كيف",
+    "english_meaning": "how",
+    "word_type": "adverb",
+    "urdu_meaning": "",
+    "personal_connotation": [
+      "down low"
+    ],
+    "color": "twig brown",
+    "shape": "hrorizontal",
+    "heaviness": 0,
+    "sharpness": 2,
+    "purity": 5,
+    "divinity": 1,
+    "earthiness": 5,
+    "emotion": [
+      "eyebrow lift"
+    ]
   }
 ]
