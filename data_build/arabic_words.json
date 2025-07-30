@@ -1,7 +1,9 @@
 [
   {
+    "id": 1,
     "arabic_word": "نور",
-    "english_meaning": "light, glow, radiance",
+    "english_meaning": "light",
+    "word_type": "noun",
     "urdu_meaning": "روشنی",
     "personal_connotation": "golden, calm, white",
     "color": "light yellow",
@@ -12,19 +14,5 @@
     "divinity": 4,
     "earthiness": 0,
     "emotion": "serene"
-  },
-  {
-    "arabic_word": "غضب",
-    "english_meaning": "wrath",
-    "urdu_meaning": "غصہ",
-    "personal_connotation": "thick, full, fat",
-    "color": "brown, red",
-    "shape": "circle",
-    "heaviness": 5,
-    "sharpness": 0,
-    "purity": 0,
-    "divinity": 2,
-    "earthiness": 0,
-    "emotion": "fear"
   }
 ]
