@@ -61,6 +61,9 @@ The transliteration table i'm following for this project:
 | ـِ            | kasra    | i               |
 
 
+
+Source: Alduais, Ahmed. (2013). Quranic Phonology and Generative Phonology: Formulating Generative Phonological Rules to Non-Syllabic Nuun"s Rules. International Journal of Linguistics. 5. 10.5296/ijl.v5i1.2436. 
+
 The corpus is in process and is regularly updated. 
 Go to <https://github.com/UsmanUq/demagh/blob/main/data_build/arabic_words.json>
 
