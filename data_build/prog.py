@@ -43,6 +43,7 @@ class ArabicWordApp:
         # Form fields
         fields = [
             ("Arabic Word", "arabic_word", "str"),
+            ("Root Word", "root_word", "str"),
             ("Word Type", "word_type", "dropdown"),
             ("English Meaning", "english_meaning", "str"),
             ("Urdu Meaning", "urdu_meaning", "str"),
@@ -84,7 +85,7 @@ class ArabicWordApp:
         frame = ttk.LabelFrame(self.root, text="Existing Words")
         frame.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
         
-        columns = ("id", "arabic_word","word_type", "english_meaning", "urdu_meaning", "personal_connotation")
+        columns = ("id", "arabic_word","root_word", "word_type", "english_meaning", "urdu_meaning", "personal_connotation")
         self.tree = ttk.Treeview(frame, columns=columns, show="headings")
         
         for col in columns:
@@ -116,6 +117,7 @@ class ArabicWordApp:
             new_word = {
                 "id": len(self.data) + 1,  # Auto-incrementing ID
                 "arabic_word": self.entries["arabic_word"].get(),
+                "root_word": self.entries["root_word"].get().strip(),
                 "english_meaning": self.entries["english_meaning"].get(),
                 "word_type": self.entries["word_type"].get(),  # Add word type
                 "urdu_meaning": self.entries["urdu_meaning"].get(),
@@ -154,6 +156,7 @@ class ArabicWordApp:
         self.tree.insert("", tk.END, values=(
             word["id"],
             word["arabic_word"],
+            word.get("root_word", ""),
             word["word_type"],
             word["english_meaning"],
             word["urdu_meaning"],

@@ -21,6 +21,46 @@ First step is to develop a corpus *(ooo fancy...)* of mappings my brain makes of
 9. earthiness *grounded, earthy, *
 10. emotion *other*
 
+The transliteration table i'm following for this project:
+
+### Table 2. Table of Arabic Letters and Their Symbols of Transliteration
+
+| Arabic Letter | Name     | Transliteration |
+|---------------|----------|-----------------|
+| ا             | alif     | aa              |
+| ء             | hamza    | '               |
+| ب             | baa      | b               |
+| ت             | taa      | t               |
+| ث             | thaa     | th              |
+| ج             | jiim     | j               |
+| ح             | haa      | h               |
+| خ             | khaa     | kh              |
+| د             | daal     | d               |
+| ذ             | dhaal    | dh              |
+| ر             | raa      | r               |
+| ز             | zaay     | z               |
+| س             | siin     | s               |
+| ش             | shin     | sh              |
+| ص             | saad     | s               |
+| ض             | daad     | d               |
+| ط             | taa      | t               |
+| ظ             | zaa      | z               |
+| ع             | ayn      | `               |
+| غ             | ghayn    | gh              |
+| ف             | faa      | f               |
+| ق             | qaff     | q               |
+| ك             | kaaf     | k               |
+| ل             | laam     | l               |
+| م             | miim     | m               |
+| ن             | nuun     | n               |
+| ه             | haa      | h               |
+| و             | waaw     | uu              |
+| ي             | yaa      | ii              |
+| ـَ            | fatha    | a               |
+| ـُ            | damma    | u               |
+| ـِ            | kasra    | i               |
+
+
 The corpus is in process and is regularly updated. 
 Go to <https://github.com/UsmanUq/demagh/blob/main/data_build/arabic_words.json>
 
