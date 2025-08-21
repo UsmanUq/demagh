@@ -107,5 +107,48 @@
     "emotion": [
       "eyebrow lift"
     ]
+  },
+  {
+    "id": 7,
+    "arabic_word": "akulun",
+    "root_word": "akul",
+    "english_meaning": "eat",
+    "word_type": "verb",
+    "urdu_meaning": "khana",
+    "personal_connotation": [
+      "wood",
+      "knock"
+    ],
+    "color": "brown",
+    "shape": "line",
+    "heaviness": 1,
+    "sharpness": 3,
+    "purity": 3,
+    "divinity": 0,
+    "earthiness": 3,
+    "emotion": [
+      "sit up"
+    ]
+  },
+  {
+    "id": 8,
+    "arabic_word": "hub",
+    "root_word": "hub",
+    "english_meaning": "love",
+    "word_type": "verb",
+    "urdu_meaning": "pyar",
+    "personal_connotation": [
+      "read balloon"
+    ],
+    "color": "red",
+    "shape": "heart",
+    "heaviness": 2,
+    "sharpness": 0,
+    "purity": 4,
+    "divinity": 3,
+    "earthiness": 0,
+    "emotion": [
+      "devotion"
+    ]
   }
 ]
