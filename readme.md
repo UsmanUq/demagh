@@ -23,7 +23,7 @@ First step is to develop a corpus *(ooo fancy...)* of mappings my brain makes of
 
 The transliteration table i'm following for this project:
 
-### Table 2. Table of Arabic Letters and Their Symbols of Transliteration
+### Table of Arabic Letters and Their Symbols of Transliteration
 
 | Arabic Letter | Name     | Transliteration |
 |---------------|----------|-----------------|
