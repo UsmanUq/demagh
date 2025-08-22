@@ -18,11 +18,11 @@ First step is to develop a corpus *(ooo fancy...)* of mappings my brain makes of
 6. sharpness *jagged vs round*
 7. purity *cleanliness*
 8. divinity *spiritual, religious connotation*
-9. earthiness *grounded, earthy, *
+9. earthiness *grounded, earthy *
 10. emotion *other*
 
 The transliteration table i'm following for this project:
-
+  (for *urdu_meaning* also)
 ### Table of Arabic Letters and Their Symbols of Transliteration
 
 | Arabic Letter | Name     | Transliteration |
